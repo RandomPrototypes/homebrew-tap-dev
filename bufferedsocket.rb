@@ -1,4 +1,4 @@
-class BufferedSocket < Formula
+class Bufferedsocket < Formula
    desc "A multiplatform library for socket communication with buffering"
    homepage "https://github.com/RandomPrototypes/BufferedSocket"
    url "https://github.com/RandomPrototypes/BufferedSocket/archive/refs/tags/v0.1.tar.gz"
