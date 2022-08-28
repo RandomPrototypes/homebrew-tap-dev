@@ -22,3 +22,4 @@ jobs:
     - name: Install BufferedSocket
       run: |
         brew install RandomPrototypes/tap/bufferedsocket
+        ls /usr/local/Cellar/bufferedsocket/0.1
