@@ -1,4 +1,4 @@
-class RPCameraInterface < Formula
+class Rpcamerainterface < Formula
    desc "Portable and unified interface for cameras."
    homepage "https://github.com/RandomPrototypes/RPCameraInterface"
    url "https://github.com/RandomPrototypes/RPCameraInterface/archive/refs/tags/v1.1.0-release.tar.gz"
