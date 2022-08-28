@@ -15,6 +15,7 @@ class Rpcamerainterface < Formula
    def install
       args = std_cmake_args
       args << "-DUSE_OPENCV=ON"
+      args << "-DBUILD_DEMO=ON"
       system "cmake", ".", *args
       system "make", "install"
    end
