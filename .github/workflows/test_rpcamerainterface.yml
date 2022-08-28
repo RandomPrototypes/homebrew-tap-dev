@@ -19,7 +19,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install BufferedSocket
+    - name: Install RPCameraInterface
       run: |
         brew install RandomPrototypes/tap/rpcamerainterface
         ls /usr/local/Cellar/rpcamerainterface/1.1.0
+        ls /usr/local/Cellar/rpcamerainterface/1.1.0/lib
+        ls /usr/local/Cellar/rpcamerainterface/1.1.0/include
+        ls /usr/local/Cellar/rpcamerainterface/1.1.0/bin
