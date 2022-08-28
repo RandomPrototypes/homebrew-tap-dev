@@ -1,5 +1,6 @@
 name: homebrew-bufferedsocket
 
+on: [workflow_dispatch]
 
 env:
   BUILD_TYPE: Release
