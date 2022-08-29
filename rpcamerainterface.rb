@@ -9,6 +9,10 @@ class Rpcamerainterface < Formula
    depends_on "cmake" => :build
    depends_on "pkg-config" => :build
    depends_on "bufferedsocket"
+   depends_on "gstreamer"
+   depends_on "gst-plugins-base"
+   depends_on "gst-plugins-good"
+   depends_on "gst-plugins-bad"
    depends_on "ffmpeg"
    depends_on "opencv"
 
