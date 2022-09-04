@@ -4,7 +4,7 @@ class Rpcamerainterface < Formula
    url "https://github.com/RandomPrototypes/RPCameraInterface/archive/refs/tags/v1.2.0-dev-2.tar.gz"
    sha256 "4c2b0131526d1acc13c4c09debcf8fe9eeb181fd1400c8bd1e81b76e6a06de4b"
    license "ApacheV2"
-   version "1.1.0"
+   version "1.2.0"
    
    option "with-gstreamer", "Use gstreamer backend"
 
