@@ -1,8 +1,8 @@
 class Rpcamerainterface < Formula
    desc "Portable and unified interface for cameras."
    homepage "https://github.com/RandomPrototypes/RPCameraInterface"
-   url "https://github.com/RandomPrototypes/RPCameraInterface/archive/refs/tags/v1.2.0-dev-2.tar.gz"
-   sha256 "4c2b0131526d1acc13c4c09debcf8fe9eeb181fd1400c8bd1e81b76e6a06de4b"
+   url "https://github.com/RandomPrototypes/RPCameraInterface/archive/refs/tags/v1.2.0-dev-3.tar.gz"
+   sha256 "5dd4f085d6c1a50ca161057243839ca46073cfa1a6d8958670870924db6f6ec6"
    license "ApacheV2"
    version "1.2.0"
    
