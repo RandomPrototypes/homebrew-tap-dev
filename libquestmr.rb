@@ -22,6 +22,8 @@ class Libquestmr < Formula
       args << "-DUSE_FFMPEG=ON"
       args << "-DUSE_ONNX_RUNTIME=ON"
       args << "-DONNX_RUNTIME_SESSION_INCLUDE_DIRS=#{Formula["onnxruntime"].opt_include}/core/session"
+      system "ls", "#{Formula["onnxruntime"].opt_include}"
+      system "ls", "#{Formula["onnxruntime"].opt_lib}"
       system "cmake", ".", *args
       system "make", "install"
    end
