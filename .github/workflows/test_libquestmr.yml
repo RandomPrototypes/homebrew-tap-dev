@@ -26,4 +26,6 @@ jobs:
         ls /usr/local/opt/onnxruntime
         echo "/usr/local/opt/onnxruntime/include"
         ls /usr/local/opt/onnxruntime/include
+        echo "/usr/local/opt/onnxruntime/include/onnxruntime"
+        ls /usr/local/opt/onnxruntime/include/onnxruntime
         #brew install RandomPrototypes/tap/libquestmr
