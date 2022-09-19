@@ -22,7 +22,7 @@ class Rpmixedrealitycapture < Formula
       args = std_cmake_args
       system "cmake", ".", *args
       system "make"
-      resource("rvm_mobilenetv3_fp32").stage { libexec.install "resources/backgroundSub_data" }
+      resource("rvm_mobilenetv3_fp32").stage { (libexec/"resources/backgroundSub_data").install "rvm_mobilenetv3_fp32.onnx"}
       libexec.install "RPMixedRealityCapture*"
       bin.write_exec_script(libexec/"RPMixedRealityCapture")
    end
