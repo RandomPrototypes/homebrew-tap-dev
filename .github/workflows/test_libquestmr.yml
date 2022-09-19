@@ -22,8 +22,8 @@ jobs:
     - name: Install libQuestMR
       run: |
         brew install onnxruntime
-        echo "/usr/local/"
-        ls /usr/local/opt/
         echo "/usr/local/opt/onnxruntime"
         ls /usr/local/opt/onnxruntime
+        echo "/usr/local/opt/onnxruntime/include"
+        ls /usr/local/opt/onnxruntime/include
         #brew install RandomPrototypes/tap/libquestmr
