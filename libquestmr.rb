@@ -21,8 +21,8 @@ class Libquestmr < Formula
       args << "-DUSE_RPCameraInterface=ON"
       args << "-DUSE_FFMPEG=ON"
       args << "-DUSE_ONNX_RUNTIME=ON"
-      args << "-DONNX_RUNTIME_SESSION_INCLUDE_DIRS=#{Formula["onnxruntime"].prefix}/include/core/session"
-      system "ls", "#{Formula["onnxruntime"].prefix}"
+      args << "-DONNX_RUNTIME_SESSION_INCLUDE_DIRS=#{Formula["onnxruntime"].include}/core/session"
+      system "ls", "#{Formula["onnxruntime"].include}"
       system "cmake", ".", *args
       system "make", "install"
    end
