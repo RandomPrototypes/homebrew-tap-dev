@@ -21,7 +21,9 @@ jobs:
 
     - name: Install RPCameraInterface
       run: |
-        brew install RandomPrototypes/tap/rpcamerainterface
+        brew install --debug RandomPrototypes/tap/rpcamerainterface
+        echo /usr/local/Cellar/
+        ls /usr/local/Cellar/
         echo /usr/local/Cellar/rpcamerainterface/1.2.0
         ls /usr/local/Cellar/rpcamerainterface/1.2.0
         echo /usr/local/Cellar/rpcamerainterface/1.2.0/bin
