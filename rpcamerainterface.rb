@@ -28,8 +28,8 @@ class Rpcamerainterface < Formula
       system "cmake", "--build", "build_lib"
       system "cmake", "--install", "build_lib"
       args2 = std_cmake_args
-      system "cmake", "--verbose", "-B", "build_app", "demo", *args2
-      system "cmake", "--verbose", "--build", "build_app"
-      system "cmake", "--verbose", "--install", "build_app"
+      system "cmake", "-B", "build_app", "demo", *args2
+      system "cmake", "--build", "build_app"
+      system "cmake", "--install", "build_app"
    end
 end
