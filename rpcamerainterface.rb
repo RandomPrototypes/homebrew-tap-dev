@@ -24,12 +24,12 @@ class Rpcamerainterface < Formula
       args << "-DBUILD_DEMO=OFF"
       args << "-DUSE_GSTREAMER=ON" if build.with?('gstreamer')
       args << "-DUSE_GSTREAMER=OFF" if !build.with?('gstreamer')
-      system "cmake", ".", *args
-      system "make", "install"
+      system "cmake", "-B", "build_lib" , ".", *args
+      system "cmake", "--build", "build_lib"
+      system "cmake", "--install", "build_lib"
       args2 = std_cmake_args
-      args2 << "-v"
-      system "cmake", "demo", *args2
-      system "make"
-      system "make", "install"
+      system "cmake", "--verbose", "-B", "build_app", "demo", *args2
+      system "cmake", "--verbose", "--build", "build_app"
+      system "cmake", "--verbose", "--install", "build_app"
    end
 end
