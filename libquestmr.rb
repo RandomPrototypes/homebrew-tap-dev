@@ -17,7 +17,7 @@ class Libquestmr < Formula
    def install
       args = std_cmake_args
       args << "-DUSE_OPENCV=ON"
-      args << "-DBUILD_DEMO=ON"
+      args << "-DBUILD_DEMO=OFF"
       args << "-DUSE_RPCameraInterface=ON"
       args << "-DUSE_FFMPEG=ON"
       args << "-DUSE_ONNX_RUNTIME=ON"
