@@ -1,8 +1,8 @@
 class Libquestmr < Formula
    desc "Mixed reality library for quest 2"
    homepage "https://github.com/RandomPrototypes/libQuestMR"
-   url "https://github.com/RandomPrototypes/libQuestMR/archive/refs/tags/v1.1.0-dev.tar.gz"
-   sha256 "84fd75a1a12a343fde9290270c464b11c48754b48c4ec161857bb20357f61db3"
+   url "https://github.com/RandomPrototypes/libQuestMR/archive/refs/tags/v1.1.0-dev-2.tar.gz"
+   sha256 "fafacd976dd2e308411deb3a690e07b3bdc45504f865e4a56d92fc839cb16ccb"
    license "GPLV2"
    version "1.1.0"
 
@@ -22,7 +22,12 @@ class Libquestmr < Formula
       args << "-DUSE_FFMPEG=ON"
       args << "-DUSE_ONNX_RUNTIME=ON"
       args << "-DONNX_RUNTIME_SESSION_INCLUDE_DIRS=#{Formula["onnxruntime"].include}/onnxruntime/core/session"
-      system "cmake", ".", *args
-      system "make", "install"
+      system "cmake", "-B", "build_lib" , ".", *args
+      system "cmake", "--build", "build_lib"
+      system "cmake", "--install", "build_lib"
+      args2 = std_cmake_args
+      system "cmake", "-B", "build_app", "demo", *args2
+      system "cmake", "--build", "build_app"
+      system "cmake", "--install", "build_app"
    end
 end
