@@ -4,7 +4,7 @@ class Libquestmr < Formula
    url "https://github.com/RandomPrototypes/libQuestMR/archive/refs/tags/v1.1.0-dev-2.tar.gz"
    sha256 "fafacd976dd2e308411deb3a690e07b3bdc45504f865e4a56d92fc839cb16ccb"
    license "GPLV2"
-   version "1.1.0"
+   version "1.1.1"
 
    depends_on "cmake" => :build
    depends_on "pkg-config" => :build
