@@ -22,6 +22,7 @@ class Libquestmr < Formula
       args << "-DUSE_FFMPEG=ON"
       args << "-DUSE_ONNX_RUNTIME=ON"
       args << "-DONNX_RUNTIME_SESSION_INCLUDE_DIRS=#{Formula["onnxruntime"].include}/onnxruntime/core/session"
+      args << "-DDEBUG_OCULUS_MRC_SOURCE=ON"
       system "cmake", "-B", "build_lib" , ".", *args
       system "cmake", "--build", "build_lib"
       system "cmake", "--install", "build_lib"
