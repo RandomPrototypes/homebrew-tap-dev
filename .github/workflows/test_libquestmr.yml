@@ -34,7 +34,3 @@ jobs:
         brew install RandomPrototypes/tap/libquestmr
         echo "/usr/local/opt/libquestmr/"
         ls /usr/local/opt/libquestmr/
-        echo "/usr/local/opt/libquestmr/1.1.0"
-        ls /usr/local/opt/libquestmr/1.1.0
-        echo "/usr/local/opt/libquestmr/1.1.0/bin"
-        ls /usr/local/opt/libquestmr/1.1.0/bin
