@@ -1,10 +1,10 @@
 class Bufferedsocket < Formula
    desc "A multiplatform library for socket communication with buffering"
    homepage "https://github.com/RandomPrototypes/BufferedSocket"
-   url "https://github.com/RandomPrototypes/BufferedSocket/archive/refs/tags/v1.1.2-dev.tar.gz"
-   sha256 "11dedef67ef5d3459c76ad0277c215363eaceb43c89e2aac55882fa998a3807a"
+   url "https://github.com/RandomPrototypes/BufferedSocket/archive/refs/tags/v1.1.3-dev.tar.gz"
+   sha256 "bbc168588bef210a69612c34779b032c92021da80051b7d04be83b6f3b5f013c"
    license "ApacheV2"
-   version "1.1.2"
+   version "1.1.3"
 
    depends_on "cmake" => :build
 
