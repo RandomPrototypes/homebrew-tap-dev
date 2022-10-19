@@ -1,10 +1,10 @@
 class Libquestmr < Formula
    desc "Mixed reality library for quest 2"
    homepage "https://github.com/RandomPrototypes/libQuestMR"
-   url "https://github.com/RandomPrototypes/libQuestMR/archive/refs/tags/v1.1.0-dev-4.tar.gz"
-   sha256 "ece3731f7557a7e45a1a01f42efdee3a42d28d04f6079e1df562b62a3fa0163e"
+   url "https://github.com/RandomPrototypes/libQuestMR/archive/refs/tags/v1.1.0-dev-5.tar.gz"
+   sha256 "d981704625fb8c5268433fcb32589dff00cab3de076932a3b37007e440842571"
    license "GPLV2"
-   version "1.1.3"
+   version "1.1.5"
 
    depends_on "cmake" => :build
    depends_on "pkg-config" => :build
