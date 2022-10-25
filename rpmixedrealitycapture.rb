@@ -1,10 +1,10 @@
 class Rpmixedrealitycapture < Formula
    desc "Mixed reality capture software for quest 2"
    homepage "https://github.com/RandomPrototypes/RPMixedRealityCapture"
-   url "https://github.com/RandomPrototypes/RPMixedRealityCapture/archive/refs/tags/v1.2.0-dev-2.tar.gz"
-   sha256 "8924f214aae9d7713face0b4ff72204f2665e2b9f782c737525c5558cbd6335a"
+   url "https://github.com/RandomPrototypes/RPMixedRealityCapture/archive/refs/tags/v1.2.0-dev-3.tar.gz"
+   sha256 "e121b2b03fd233c9ba0293c0c5cfef36e6bea7478097876e5a470c1b9df446db"
    license "GPLV2"
-   version "1.2.2"
+   version "1.2.3"
 
    depends_on "cmake" => :build
    depends_on "pkg-config" => :build
