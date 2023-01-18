@@ -1,8 +1,8 @@
 class Rpcamerainterface < Formula
    desc "Portable and unified interface for cameras."
    homepage "https://github.com/RandomPrototypes/RPCameraInterface"
-   url "https://github.com/RandomPrototypes/RPCameraInterface/archive/refs/tags/v1.2.0-dev-4.tar.gz"
-   sha256 "a5889a71931d6829464d1509e0999c8ffea7aa0f87f308ab49002180acb92348"
+   url "https://github.com/RandomPrototypes/RPCameraInterface/archive/refs/tags/v1.2.0-dev-5.zip"
+   sha256 "2b3137693e4caefa2c37818bee828b4e3957382d1d0322f9613d288f582c625a"
    license "ApacheV2"
    version "1.2.0"
    
@@ -17,6 +17,7 @@ class Rpcamerainterface < Formula
    depends_on "gst-plugins-bad"  if build.with?('gstreamer')
    depends_on "ffmpeg"
    depends_on "opencv"
+   depends_on "screen_capture_lite"
 
    def install
       args = std_cmake_args
@@ -24,6 +25,7 @@ class Rpcamerainterface < Formula
       args << "-DBUILD_DEMO=OFF"
       args << "-DUSE_GSTREAMER=ON" if build.with?('gstreamer')
       args << "-DUSE_GSTREAMER=OFF" if !build.with?('gstreamer')
+      args << "-DUSE_SCREEN_CAPTURE_LITE=ON"
       system "cmake", "-B", "build_lib" , ".", *args
       system "cmake", "--build", "build_lib"
       system "cmake", "--install", "build_lib"
