@@ -11,7 +11,8 @@ class ScreenCaptureLite < Formula
    def install
       args = std_cmake_args
       args << "-DBUILD_CSHARP=OFF -DBUILD_EXAMPLE=OFF"
-      system "cmake", ".", *args
-      system "make", "install"
+      system "cmake", "-B", "build_lib" , ".", *args
+      system "cmake", "--build", "build_lib"
+      system "cmake", "--install", "build_lib"
    end
 end
