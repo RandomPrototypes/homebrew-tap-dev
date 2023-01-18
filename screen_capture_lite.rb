@@ -1,4 +1,4 @@
-class Screen_capture_lite < Formula
+class ScreenCaptureLite < Formula
    desc "Cross-platform screen and window capturing library"
    homepage "https://github.com/smasherprog/screen_capture_lite"
    url "https://github.com/smasherprog/screen_capture_lite/archive/refs/tags/17.1.613.zip"
