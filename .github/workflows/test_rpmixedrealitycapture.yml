@@ -21,4 +21,4 @@ jobs:
 
     - name: Install RPMixedRealityCapture
       run: |
-        brew install RandomPrototypes/tap/rpmixedrealitycapture
+        brew install RandomPrototypes/tap-dev/rpmixedrealitycapture
