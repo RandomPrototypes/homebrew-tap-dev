@@ -22,6 +22,5 @@ jobs:
     - name: Install screen_capture_lite
       run: |
         brew install RandomPrototypes/tap-dev/screen_capture_lite_shared
-        ls /usr/local/Cellar/screen_capture_lite_shared/17.1.613
-        ls /usr/local/Cellar/screen_capture_lite_shared/17.1.613/lib
         ls /usr/local/Cellar/screen_capture_lite_shared/17.1.613/lib/cmake
+        ls /usr/local/Cellar/screen_capture_lite_shared/17.1.613/lib/cmake/screen_capture_lite
