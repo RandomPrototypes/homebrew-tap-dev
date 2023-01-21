@@ -17,7 +17,7 @@ class Rpcamerainterface < Formula
    depends_on "gst-plugins-bad"  if build.with?('gstreamer')
    depends_on "ffmpeg"
    depends_on "opencv"
-   depends_on "screen_capture_lite"
+   depends_on "screen_capture_lite_shared"
 
    def install
       args = std_cmake_args
