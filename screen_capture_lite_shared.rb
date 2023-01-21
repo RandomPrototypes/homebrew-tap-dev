@@ -1,8 +1,8 @@
-class ScreenCaptureLite < Formula
+class ScreenCaptureLiteShared < Formula
    desc "Cross-platform screen and window capturing library"
    homepage "https://github.com/smasherprog/screen_capture_lite"
-   url "https://github.com/RandomPrototypes/screen_capture_lite/archive/refs/tags/17.1.613-dev-1.zip"
-   sha256 "a90c4b8b68157f637c814da6312c4844020d349e2da9af13c89ed011aec8302c"
+   url "https://github.com/smasherprog/screen_capture_lite/archive/refs/tags/17.1.613.zip"
+   sha256 "e1cc327643bea2eea5854954d35be0c838ab23821cd89011ea6fc620db0b7032"
    license "MIT"
    version "17.1.613"
 
